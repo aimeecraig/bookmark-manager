@@ -11,10 +11,23 @@ So that I can save a website
 I would like to add the site's address and title to bookmark manager
 ```
 
-## Domain Models ##
+## Domain Model ##
 | Client     | Controller | Model    | View           |
 | ---------- | ---------- | -------- | -------------- |
 | /bookmarks | app.rb     | Bookmark | erb :bookmarks |
+
+## Dependancies ##
+Capybara
+PG
+Rspec
+Rubocop
+Simplecov
+Simplecov-Console
+Sinatra
+
+*NOTE: These can be installed by running `bundle` in the root of the directory.*
+
+## How to Use ##
 
 ## How to Create the Database ##
 1. In Terminal, connect to PostgreSQL:
