@@ -41,7 +41,7 @@ cd bookmark-manager
 rackup
 ```
 
-### How to Create the Database ###
+### Create the Database ###
 1. In Terminal, connect to PostgreSQL:
 ```sql
 psql
