@@ -1,7 +1,7 @@
 require 'sinatra'
 require './lib/bookmark'
 
-class App < Sinatra::Base
+class BookmarkManager < Sinatra::Base
   get '/' do
     "Bookmark Manager"
   end
@@ -10,4 +10,6 @@ class App < Sinatra::Base
     @bookmarks = Bookmark.all
     erb :bookmarks
   end
+
+  run! if app_file == $0
 end
