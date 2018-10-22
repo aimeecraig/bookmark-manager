@@ -6,6 +6,6 @@ class App < Sinatra::Base
   end
 
   get '/bookmarks' do
-    "http://www.google.co.uk/"
+    erb :bookmarks
   end
 end
