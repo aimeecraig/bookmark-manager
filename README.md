@@ -15,11 +15,20 @@ I would like to add the site's address and title to bookmark manager
 Client -> Controller -> Model -> View
 /bookmarks -> app -> Bookmark -> erb bookmarks
 
-## Created database and table ##
-
-- Created database:
+## How to Create the Database ##
+1. In Terminal, connect to PostgreSQL:
+```sql
+psql
+```
+2. Create the database:
+```sql
 CREATE DATABASE bookmark_manager;
-- Connected to database:
+```
+3. Connect to the database:
+```sql
 \c bookmark_manager;
-- Created a table
-CREATE TABLE bookmarks( id SERIAL PRIMARY KEY, url VARCHAR(60));
+```
+4. Run the query in db/migrations/01_create_bookmarks_table.sql:
+```sql
+CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+```
