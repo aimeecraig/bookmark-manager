@@ -12,8 +12,9 @@ I would like to add the site's address and title to bookmark manager
 ```
 
 ## Domain Models ##
-Client -> Controller -> Model -> View
-/bookmarks -> app -> Bookmark -> erb bookmarks
+| Client     | Controller | Model    | View           |
+| ---------- | ---------- | -------- | -------------- |
+| /bookmarks | app.rb     | Bookmark | erb :bookmarks |
 
 ## How to Create the Database ##
 1. In Terminal, connect to PostgreSQL:
