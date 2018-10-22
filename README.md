@@ -28,8 +28,20 @@ I would like to add the site's address and title to bookmark manager
 *NOTE: These can be installed by running `bundle` in the root of the directory.*
 
 ## How to Use ##
+1. Open Terminal and clone the repository:
+```bash
+git clone https://github.com/aimeecraig/bookmark-manager.git
+```
+2. Change into the project directory:
+```bash
+cd bookmark-manager
+```
+3. Run the program:
+```bash
+rackup
+```
 
-## How to Create the Database ##
+### How to Create the Database ###
 1. In Terminal, connect to PostgreSQL:
 ```sql
 psql
