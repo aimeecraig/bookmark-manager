@@ -8,23 +8,12 @@
         1,
         1,
         1,
-        null,
-        null,
-        null
-      ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/lib/bookmark.rb": [
-        1,
         1,
         null,
         null,
         null
       ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/hello_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
+      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/hello_spec.rb": [
         1,
         1,
         1,
@@ -32,7 +21,14 @@
         null,
         null
       ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/viewing_bookmarks_spec.rb": [
+      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/navigation_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": [
         1,
         1,
         1,
@@ -41,6 +37,6 @@
         null
       ]
     },
-    "timestamp": 1540214867
+    "timestamp": 1540221797
   }
 }
