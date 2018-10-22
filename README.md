@@ -17,13 +17,13 @@ I would like to add the site's address and title to bookmark manager
 | /bookmarks | app.rb     | Bookmark | erb :bookmarks |
 
 ## Dependancies ##
-Capybara
-PG
-Rspec
-Rubocop
-Simplecov
-Simplecov-Console
-Sinatra
+* Capybara
+* PG
+* Rspec
+* Rubocop
+* Simplecov
+* Simplecov-Console
+* Sinatra
 
 *NOTE: These can be installed by running `bundle` in the root of the directory.*
 
