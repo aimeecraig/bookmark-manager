@@ -10,8 +10,8 @@ describe Bookmark do
 
   describe '#create' do
     it 'adds a new bookmark' do
-      subject.create('http://www.google.co.uk')
-      expect(subject.all).to include 'http://www.google.co.uk'
+      Bookmark.create('http://www.google.co.uk')
+      expect(Bookmark.all).to include 'http://www.google.co.uk'
     end
   end
 end
