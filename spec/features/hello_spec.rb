@@ -1,5 +1,5 @@
 feature 'Displays page' do
-  scenario 'Shows hello world' do
+  scenario 'shows web app name' do
     visit '/'
     expect(page).to have_content 'Bookmark Manager'
   end
