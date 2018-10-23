@@ -4,7 +4,7 @@ feature 'Adding bookmark' do
     connection.exec("INSERT INTO bookmarks(url) VALUES('http://www.google.com');")
     visit '/'
     click_link 'Add Bookmark'
-    fill_in 'Web Address', with: 'http://www.twitter.com'
+    fill_in "url", with: 'http://www.twitter.com'
     click_button 'Add'
     expect(page).to have_content 'http://www.twitter.com'
     expect(page).to have_content 'http://www.google.com'
