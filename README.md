@@ -42,6 +42,8 @@ rackup
 ```
 4. Access the program from `localhost:9292`.
 
+5. Create the database to store the bookmarks by following the steps below.
+
 ### Create the Database ###
 1. In Terminal, connect to PostgreSQL:
 ```sql
