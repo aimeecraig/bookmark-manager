@@ -2,13 +2,17 @@
 
 ## User Stories ##
 ```
-As a user
+As a time-pressed user
 So that I can quickly access websites
 I'd like to view a list of bookmarks
 
 As a time-pressed user
 So that I can save a website
 I would like to add the site's address and title to bookmark manager
+
+As a time-pressed user
+So that I can keep my bookmarks up-to-date
+I'd like to delete a bookmark
 ```
 
 ## Domain Model ##
