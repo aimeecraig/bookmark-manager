@@ -18,4 +18,21 @@ describe Bookmark do
       expect(bookmarks[0].url).to eq "http://www.google.com"
     end
   end
+
+  describe '#delete' do
+    it 'deletes a bookmark' do
+      Bookmark.create(title: 'Google', url: 'http://www.google.com')
+      Bookmark.create(title: 'Facebook', url: 'http://www.facebook.com')
+      bookmarks = Bookmark.all
+      expect(bookmarks.length).to eq 2
+      Bookmark.delete('Google')
+      bookmarks = Bookmark.all
+      expect(bookmarks.length).to eq 1
+      exist = false
+      bookmarks.each do |bookmark|
+        exist = true if bookmark.title == 'Google'
+      end
+      expect(exist).to eq false
+    end
+  end
 end

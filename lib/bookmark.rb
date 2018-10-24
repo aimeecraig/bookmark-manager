@@ -9,23 +9,17 @@ class Bookmark
   end
 
   def self.all
-    # if ENV['TEST_DATABASE'] == 'bookmark_manager_test'
-    #   connection = PG.connect(dbname: 'bookmark_manager_test')
-    # else
-    #   connection = PG.connect(dbname: 'bookmark_manager')
-    # end
     result = connection.exec("SELECT * FROM bookmarks;")
     create_object_array(result)
   end
 
   def self.create(title:, url:)
-    # if ENV['TEST_DATABASE'] == 'bookmark_manager_test'
-    #   connection = PG.connect(dbname: 'bookmark_manager_test')
-    # else
-    #   connection = PG.connect(dbname: 'bookmark_manager')
-    # end
     result = connection.exec("INSERT INTO bookmarks(url, title) VALUES('#{url}', '#{title}') RETURNING id, title, url;")
     create_object_array(result)
+  end
+
+  def self.delete(delete_title)
+    connection.exec("DELETE FROM bookmarks WHERE title = '#{delete_title}';")
   end
 
   def self.create_object_array(result)

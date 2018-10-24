@@ -20,5 +20,15 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
+  post '/bookmarks/delete' do
+    Bookmark.delete(params['submit'])
+    redirect '/bookmarks'
+  end
+
+  post '/bookmarks/comment' do
+    Bookmark.comment(params['comment_text'])
+    redirect '/bookmarks'
+  end
+
   run! if app_file == $0
 end
