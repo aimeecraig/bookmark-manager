@@ -1,11 +1,12 @@
 require 'pg'
 
 class Bookmark
-  attr_reader :title, :url
+  attr_reader :id, :url, :title
 
-  def initialize(title, url)
+  def initialize(id, url, title)
     @title = title
     @url = url
+    @id = id
   end
 
   def self.all
@@ -14,18 +15,19 @@ class Bookmark
   end
 
   def self.create(title:, url:)
-    result = connection.exec("INSERT INTO bookmarks(url, title) VALUES('#{url}', '#{title}') RETURNING id, title, url;")
+    result = connection.exec("INSERT INTO bookmarks(url, title) VALUES('#{url}',
+     '#{title}') RETURNING id, url, title;")
     create_object_array(result)
   end
 
-  def self.delete(delete_title)
-    connection.exec("DELETE FROM bookmarks WHERE title = '#{delete_title}';")
+  def self.delete(id)
+    connection.exec("DELETE FROM bookmarks WHERE id = '#{id}';")
   end
 
   def self.create_object_array(result)
     arr = []
     result.each { |bookmark|
-      arr.push(Bookmark.new(bookmark['title'], bookmark['url']))
+      arr.push(Bookmark.new(bookmark['id'], bookmark['url'], bookmark['title']))
     }
     arr
   end
