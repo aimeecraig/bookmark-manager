@@ -6,9 +6,7 @@ feature 'Adding bookmark' do
     fill_in "url", with: 'http://www.twitter.com'
     fill_in "title", with: 'Twitter'
     click_button 'Add'
-    expect(page).to have_content 'Twitter'
-    expect(page).to have_content 'http://www.twitter.com'
-    expect(page).to have_content 'Google'
-    expect(page).to have_content 'http://www.google.com'
+    expect(page).to have_link('Twitter', :href => 'http://www.twitter.com')
+    expect(page).to have_link('Google', :href => 'http://www.google.com')
   end
 end
