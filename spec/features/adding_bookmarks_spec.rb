@@ -1,6 +1,6 @@
 feature 'Adding bookmark' do
   scenario 'adds a bookmark to the list' do
-    Bookmark.create('Google', 'http://www.google.com')
+    Bookmark.create(title: 'Google', url: 'http://www.google.com')
     visit '/'
     click_link 'Add Bookmark'
     fill_in "url", with: 'http://www.twitter.com'
