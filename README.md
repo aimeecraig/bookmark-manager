@@ -40,6 +40,7 @@ cd bookmark-manager
 ```bash
 rackup
 ```
+4. Access the program from `localhost:9292`.
 
 ### Create the Database ###
 1. In Terminal, connect to PostgreSQL:
