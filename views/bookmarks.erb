@@ -3,10 +3,7 @@
     <li>
       <a href=<%= bookmark.url %>><%= bookmark.title %></a>
       <form action="/bookmarks/<%= bookmark.id %>" method="post">
-        <label>
-          Delete
-          <input type="submit" id="Delete <%= bookmark.id %>" value="Delete">
-        </label>
+        <input type="submit" id="delete_<%= bookmark.id %>" value="Delete">
       </form>
       <form action="/bookmarks/comment" method="post">
         <label>
