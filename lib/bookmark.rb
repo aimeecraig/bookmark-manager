@@ -24,6 +24,10 @@ class Bookmark
     connection.exec("DELETE FROM bookmarks WHERE id = #{id};")
   end
 
+  def self.edit(id)
+
+  end
+
   def self.create_object_array(result)
     arr = []
     result.each { |bookmark|

@@ -1,89 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/bookmark_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/adding_bookmarks_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/comment_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/deleting_bookmarks_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/hello_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/updating_bookmarks_spec.rb": [
         1,
         1,
@@ -96,17 +13,8 @@
         0,
         null,
         null
-      ],
-      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1540458961
+    "timestamp": 1540459658
   }
 }

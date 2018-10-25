@@ -26,8 +26,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks/edit/:id' do
-    Bookmark.edit(params['id'])
-    redirect '/bookmarks'
+    erb :edit
   end
 
   post '/bookmarks/comment' do
