@@ -13,6 +13,10 @@ I'd like to add the site's address and title to bookmark manager
 As a time-pressed user
 So that I can keep my bookmarks up-to-date
 I'd like to delete a bookmark
+
+As a time-pressed user
+So that I can keep my bookmarks up-to-date
+I'd like to update a bookmark
 ```
 
 ## Domain Model ##
