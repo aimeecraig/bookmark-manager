@@ -84,6 +84,19 @@
         null,
         null
       ],
+      "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/updating_bookmarks_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/aimeecraig/Projects/Makers Academy/Week 4/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": [
         1,
         1,
@@ -94,6 +107,6 @@
         null
       ]
     },
-    "timestamp": 1540415032
+    "timestamp": 1540458961
   }
 }

@@ -20,8 +20,13 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
-  post '/bookmarks/:id' do
+  post '/bookmarks/delete/:id' do
     Bookmark.delete(params['id'])
+    redirect '/bookmarks'
+  end
+
+  post '/bookmarks/edit/:id' do
+    Bookmark.edit(params['id'])
     redirect '/bookmarks'
   end
 
